@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #667aff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../assets/images/bg.jpg');
+}
+
+// Workaround Ant Design Conflict
+.ant-btn-primary {
+  background-color: var(--color-primary);
+}
+
+// UI Enchancement
+.ant-form-item-explain-error {
+  @apply mb-4;
+}
